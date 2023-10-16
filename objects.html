@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let fname = "sumit";
+        let lname = "patil";
+        let age = 23;
+        let address = "siddhanerli";
+
+        console.log(fname);
+        console.log(fname + " " + lname + " " + age + " " + address);
+
+        let person = {
+            fname: "sumit",
+            lname: "patil",
+            age: 23,
+            address: "siddhanerli"
+        }
+        console.log(person);
+        console.log(person["fname"] + " " + person["lname"] + " " + person["age"] + "" + person["address"]);
+
+        document.getElementById("demo").innerHTML = person.fname + " " + person.lname + " " + person.age + " " + person.address;
+
+        let person2 = {
+            fname: "sumit",
+            lname: "patil",
+            age: 23,
+            address: "siddhanerli",
+
+            name: function () {
+                return this.fname + " " + this.lname + " " + this.age + " " + this.address;
+            }
+        };
+        document.getElementById("demo").innerHTML = person2.name();
+
+
+    </script>
+</body>
+
+</html>

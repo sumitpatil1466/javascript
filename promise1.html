@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function yash()
+        {
+            return new Promise(function(resolve,reject){
+                setInterval(() => {
+                    console.log("i hate u");
+                    document.getElementById("demo").innerHTML += "i miss u" + "<br>";
+                    
+                }, 1000);
+            })
+        }
+
+        yash();
+
+    </script>
+</body>
+</html>

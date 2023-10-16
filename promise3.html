@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age;
+        age = prompt("enter age:");
+        function voting(age)
+        {
+            return new Promise(function(resolve,reject){
+                console.log("please wait");
+
+                setTimeout(() => {
+
+                    if(age>=18)
+                    {
+                        resolve("eligible for voting")
+                    }
+
+                    else{
+                        reject("not eligible for voting");
+                    }
+                    
+                }, 5000);
+            })
+        }
+
+        let x = (success)=>{
+            console.log(success);
+        }
+
+        let y = (error)=>{
+            console.log(error);
+        }
+
+        voting(age).then(x).catch(y);
+    </script>
+</body>
+</html>

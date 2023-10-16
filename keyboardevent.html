@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYBOARD EVENTS</title>
+</head>
+
+<body>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ad?</p>
+
+    <!-- KEYBOARD EVENTS -->
+    
+    <!-- 1-ONKEYUP -->
+     <!-- A user releases a key -->
+    <button onkeyup="sp()">ONKEYUP</button>
+
+    <!-- 2-ONKEYDOWN -->
+    <!-- A user presses a key -->
+    <button onkeydown="sp1()">ONKEYDOWN</button>
+
+    <!-- 3-ONKEYPRESS -->
+    <!-- A user presses a key -->
+    <button onkeypress="sp2()">ONKEYPRESS</button>
+
+
+
+    <script>
+        function sp(){
+            document.getElementById("demo").style.backgroundColor = "red";
+        }
+        function sp1(){
+            document.getElementById("demo").style.backgroundColor = "pink";
+        }
+        function sp2() {
+            document.getElementById("demo").style.backgroundColor = "skyblue";
+        }
+    </script>
+</body>
+
+</html>

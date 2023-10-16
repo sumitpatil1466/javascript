@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+
+<body>
+    <script>
+        // // Math Methods
+
+
+        // //................................ The Boolean() Function...............................
+
+
+        // // You can use the Boolean() function to find out if an expression (or a variable) is true:
+
+        // let a = Boolean(10<9);
+        // console.log(a);
+
+        // // Everything With a "Value" is True
+
+        // let b = Boolean(100);
+        // console.log(b);
+
+        // let b1 = Boolean(3.14);
+        // console.log(b1);
+
+        // let b2 = Boolean("sumit");
+        // console.log(b2);
+
+        // // Everything Without a "Value" is False
+
+        // let c =Boolean(0);
+        // console.log(c);
+
+        // let c1 =Boolean();
+        // console.log(c1);
+
+
+
+        // // JavaScript Booleans as Objects
+        // // But booleans can also be defined as objects with the keyword new:
+
+
+        // let s = false;
+        // let s1 = new Boolean(false);
+        // console.log(typeof(s) + " " + (s1));
+
+        // let x = false;
+        // let x1 = new Boolean(false);
+        // console.log(x==x1);
+
+        // let y = false;
+        // let x2 = new Boolean(false);
+        // console.log(y===x2);
+
+        // let z = new Boolean(false);
+        // let x3 = new Boolean(false);
+        // console.log(z==x3);
+
+
+        // let p = new Boolean(false);
+        // let x4 = new Boolean(false);
+        // console.log(p===x4);
+
+        // ................................Comparison Operators................................
+
+        // let a = 7;
+        // console.log(a==5);
+
+        // let b = 7;
+        // console.log(b==7);
+
+        // let c = 7;
+        // console.log(c=="7");
+
+        // let d = 7;
+        // console.log(d===7);
+
+        // let e = 7;
+        // console.log(e==="7");
+
+        // let f = 7;
+        // console.log(f != 5);
+
+        // let g = 7;
+        // console.log(g !== 7);
+
+        // let h = 7;
+        // console.log(h !=="7");
+
+
+        // let i = 7;
+        // console.log(i !==5);
+
+        // let j = 7;
+        // console.log(j > 5);
+
+        // let k = 7;
+        // console.log(k < 5);
+
+        // let l = 7;
+        // console.log(l >= 5);
+
+        // let m = 7;
+        // console.log(m <= 5);
+
+        // ..........................logical operator..........................
+3
+        let x = 8;
+        let y = 5;
+        console.log((x < 10 && y > 3) + " " + (x < 10 && y < 3));
+
+
+        let a = 9;
+        let b = 4;
+        console.log((a == 5 || b == 5) + " " + (a == 9 || b == 0) + " " + (a == 0 || b == 4) + " " + (a == 9 || b == 3));
+
+        let c = 8;
+        let d = 5;
+        console.log(!(c === d) + " " + !(c > d));
+
+
+
+        // ............................Conditional (Ternary) operator...............................
+
+        let age;
+        age = prompt("Enter your age.....:");
+        t = (age >= 18)? "Eligible " : "Not Eligible"
+
+        window.alert(t + " " + "for Driving");
+    </script>
+</body>
+
+</html>

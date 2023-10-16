@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks;
+        marks = prompt("EMTER YOURS MARKS : ");
+        function student() {
+            return new Promise(function (resolve,reject){
+                console.log("PLEASE WAIT........................");
+
+                setTimeout(() => {
+                    
+                    if (marks>=75&& marks<=100) {
+                        resolve("FIRST CLASS WITH DISTINCTION")
+                    }
+                    else if (marks>=60 && marks<=74) {
+                        resolve("FIRST CLASS")
+                    } 
+
+                    else if (marks>=35 && marks<=59) {
+                        resolve("SECOND CLASS")
+                    } 
+
+                    else{
+                        reject("FAIL")
+                    }
+                    
+                }, 3000);
+
+            })
+            
+        }
+        let a =(success)=>{
+            console.log(success);
+        }
+        let b =(success)=>{
+            console.log(success);
+        } 
+        
+        student().then(a).catch(b)
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function shadi(married)
+        {
+            return new Promise(function(resolve,reject){
+                console.log("fetching data please wait");
+
+                setTimeout(() => {
+
+                    if(married)
+                    {
+                        resolve("happy married life");
+                    }
+
+                    else{
+                        reject("single");
+                    }
+                    
+                }, 3000);
+            })
+        }
+
+        let success = (result)=>{
+            console.log(result);
+        }
+
+        let rejection = (error)=>{
+            console.log(error);
+        }
+
+
+        shadi(false).then(success).catch(rejection);
+    </script>
+</body>
+</html>

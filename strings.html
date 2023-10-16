@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+</head>
+
+<body>
+    <p id="jaduuu"></p>
+    <script>
+        // string
+        // let city = "kolhapur";
+        // let tal = "kagal";
+        // let villege = "siddhanerli";
+
+        // document.getElementById("jaduuu").innerHTML = city + " " + tal + " " + villege + " ";
+
+        // single Quote or double Quote
+        // let s1 ="sumit";
+        // let s2 ='shivaji';
+        // let s3 ="patil";
+
+        // document.getElementById("jaduuu").innerHTML = s1 + "<br> " + s2 + " <br>" + s3 + " ";
+
+
+        // length
+        // let bigfan = "rohit gurunath sharma";
+        // document.getElementById("jaduuu").innerHTML = bigfan.length;
+
+        // String Parts
+
+        // slice(start, end)
+        // substring(start, end)
+        // substr(start, length)
+
+        // slice
+        // let fruits="apple bannana orange mango ";
+        // let part = fruits.slice(5,11);
+        // document.getElementById("jaduuu").innerHTML = part;
+
+        // If you omit the second parameter, the method will slice out the rest of the string:
+        // START
+        // let fruits2="apple bannana orange mango ";
+        // let part2 = fruits.slice(8);
+        // document.getElementById("jaduuu").innerHTML = part2;
+
+        // If a parameter is negative, the position is counted from the end of the string:
+        // // END
+        // let fruits3="apple bannana orange mango ";
+        // let part3 = fruits.slice(-14);
+        // document.getElementById("jaduuu").innerHTML = part3;
+
+        // String substring
+
+        // let fruits4="apple bannana orange mango ";
+        // document.getElementById("jaduuu").innerHTML = fruits4.substring(6,11);
+
+        // String substr
+        // let fruits5="apple bannana orange mango ";
+        // document.getElementById("jaduuu").innerHTML = fruits5.substr(5,6);
+
+
+
+        // Replacing String Content
+        // let text= "hiiii.wellcome to the igap";
+        // let sp=text.replace("hiiii","hellllo");
+        // document.write(sp);
+
+        // String ReplaceAll
+        // let s = "I love dogs. dogs are very easy to love. dogs are very popular";
+        // p = s.replaceAll("dogs", "cats");
+        // document.getElementById("jaduuu").innerHTML=p;
+        // document.write(p);
+
+        // Converting to Upper and Lower Case
+        //  A string is converted to upper case with toUpperCase
+        //A string is converted to lower case with toLowerCase
+
+        //  1-String toUpperCase
+        // let r = "i am big fan of rohit sharma";
+        // n = r.toUpperCase();
+        // n = r.toLowerCase();
+        // window.alert(n);
+
+        //  String concat
+        // let a= "SUMIT";
+        // let b= "PATIL";
+        // let c= a.concat(" ",b);
+        // document.write(c);
+
+        // // String trim
+        // let a= "               SUMIT  PATIL      ";
+        // let b= a.trim();
+        // document.write(a);
+
+        //  // String trimStart
+        // let a= "               SUMIT  PATIL";
+        // let b= a.trimStart();
+        // document.write(a);
+
+        // // String trimEnd
+        // let a = "SUMIT PATIL";
+        // let b = a.trimEnd();
+        // document.write(a);
+
+        // // String Padding
+        // // String padStart
+        // let num ="5";
+        // num=num.padStart(6,0);
+        // document.getElementById("jaduuu").innerHTML=num;
+
+        // // String padEnd
+        // let num ="5";
+        // num=num.padEnd(7,0);
+        // document.getElementById("jaduuu").innerHTML=num;
+
+        // // String Characters
+        // // String charAt
+        // var text ="sumit patil";
+        // var msg =text.charAt(4);
+        // console.log(msg) 
+
+        // // String charCodeAt
+        // var text ="sumit patil";
+        // var msg =text.charCodeAt(4);
+        // console.log(msg);
+
+
+        // String split
+        let text ="sumit ";
+        const msg =text.split("");
+        // document.getElementById("jaduuu").innerHTML = msg[4];
+        document.write(msg[4]);
+    </script>
+
+</body>
+
+</html>

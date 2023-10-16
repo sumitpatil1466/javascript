@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["mango", "apple", "papaya", "grapes", "banana", "watermelon"];
+        console.log(fruits);
+        console.log(fruits[2]);
+
+        for (i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+        console.log(fruits[3] = "orange")
+        console.log(fruits);
+
+        let movies = [];
+        console.log(movies[0] = "DHARMVEER");
+        console.log(movies[1] = "THANAJI");
+        console.log(movies[2] = "CHA.SAMBAJI MAHARAJ");
+        console.log(movies[3] = "PAVANKHIND");
+        console.log(movies);
+
+        let x = new Array("splendor", "yamaha", "bullet", "duke", "pulsor");
+        console.log(x);
+
+        let books = ["phy", "chem", "sci", "geography", "maths"];
+        console.log(books);
+        console.log(books.length);
+        console.log(books.toString());
+        console.log(books.join("--"));
+
+        console.log(books.push("environment"));
+        console.log(books);
+        console.log(books.pop());
+        console.log(books);
+        console.log(books.shift());
+        console.log(books);
+        console.log(books.unshift("social science"));
+        console.log(books);
+
+        console.log(delete books[4]);
+
+        console.log(fruits.concat(books));
+        let animal = ["tiger", "lion", "horse", "elephant", "cat"];
+        console.log(animal);
+        console.log(animal.sort());
+        console.log(animal.reverse());
+
+        let no = [12, 44, 52, 45, 65, 45, 78, 98, 45, 88, 77];
+        console.log(no);
+        let min = Math.min.apply("", no);
+        console.log(min);
+        let max = Math.max.apply(null, no);
+        console.log(max);
+    </script>
+</body>
+
+</html>

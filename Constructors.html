@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructors</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function person(first,last,age,eye,hobby){
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColcor = eye;
+        this.hobby = hobby;
+        }   
+
+        // let s = new person("sumit","patil",24,"black","playing cricket");
+
+        let p = new person("rohit","patil",25,"blue","swimming");
+
+        // console.log(s);
+
+        // console.log(p);
+
+        // s.nationality = "Indian";
+        // console.log(s);
+
+        p.name = function() {
+
+            return this.firstName + " " + this.lastName;
+        };
+        console.log(p);
+        document.getElementById("demo").innerHTML = "my name is : " + p.name();
+
+    </script>
+</body>
+</html>
